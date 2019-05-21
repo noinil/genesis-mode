@@ -38,36 +38,43 @@
 ;;          |___/           |___/                   |___/
 ;; define keywords, types, consts, events, functions
 (setq genesis-keywords
-      '("topfile" "parfile" "strfile" "psffile" "pdbfile" "crdfile" "modefile" "gprfile" "reffile"
+      '("topfile" "parfile" "strfile" "psffile" "pdbfile" "crdfile" "modefile" "gprfile" "reffile" "logfile"
         "prmtopfile" "ambcrdfile" "ambreffile" "grotopfile" "grocrdfile" "groreffile" "dcdfile" "dcdvelfile" 
         "rstfile" "forcefield" "electrostatic" "switchdist" "cutoffdist" "pairlistdist" "dielec_const" 
         "vdw_force_switch" "vdw_shift" "cmap_pspline" "pme_alpha" "pme_alpha_tol" "pme_nspline" "pme_multiple" "pme_mul_ratio" 
         "table_density" "water_model" "output_style" "dispersion_corr" "integrator" "nsteps" 
-        "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" 
+        "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" "method"
         "stoptr_period" "nbupdate_period" "iseed" "initial_time" "annealing" "anneal_period" 
         "dtemperature" "verbose" "target_md" "steered_md" "initial_value" "final_value" 
         "rigid_bond" "fast_water" "shake_iteration" "shake_tolerance" "water_model" "hydrogen_mass_upper_bound" 
         "ensemble" "tpcontrol" "temperature" "pressure" "gamma" "tau_t" 
         "tau_p" "compressibility" "gamma_t" "gamma_p" "isotropy" "type" 
         "box_size_x" "box_size_y" "box_size_z" "nfunctions"
+	"dimension" "exchange_period"
         "group1" "group2" "group3" "group4" "group5" "group6" "group7" "group8" "group9"
         "function1" "function2" "function3" 
         "direction1" "direction2" "direction3"
         "constant1" "constant2" "constant3"
+        "type1" "type2" "type3"
+        "nreplica1" "nreplica2" "nreplica3"
+        "parameters1" "parameters2" "parameters3"
+        "cyclic_params1" "cyclic_params2" "cyclic_params3"
         "select_intex1" "select_intex2" "select_intex3" ))
 (setq genesis-types
-      '("INPUT" "OUTPUT" "ENERGY" "DYNAMICS" "CONSTRQAINTS" "ENSEMBLE" "BOUNDARY" "SELECTION"
-        "RESTRAINTS"))
+      '("[INPUT]" "[OUTPUT]" "[ENERGY]" "[DYNAMICS]" "[CONSTRQAINTS]" "[ENSEMBLE]" "[BOUNDARY]" "[SELECTION]" 
+        "[REMD]" "[CONSTRAINTS]" "[RESTRAINTS]"))
 (setq genesis-constants
       '("ALL" "X" "Y" "Z"
         "auto" "NO" "YES" "NONE" ))
 (setq genesis-events
-      '("pdb" "top" "psf" "par" "str" "crd" "gpr" "gro" "dcd" "rst" "mode"))
+      '("pdb" "top" "psf" "par" "str" "crd" "gpr" "gro" "dcd" "rst" "mode" "log"))
 (setq genesis-functions
       '("CHARMM" "AAGO" "CAGO" "KBGO" "AMBER" "GROAMBER" "GROMARTINI" "PME"
         "TIP3"
         "LEAP" "VVER"
         "NOBC" "PBC"
+	"SD"
+	"TEMPERATURE" "PRESSURE" "GAMMA" "REST"
         "NVE" "NVT" "NPT" "NPAT" "NPgT"
         "ISO" "SEMI-ISO" "ANISO" "XY-FIXED"
         "POSI" "DIST"))
