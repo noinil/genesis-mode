@@ -17,7 +17,7 @@ your Emacs configuration file:
 To use the snippets, please try this: https://github.com/noinil/esnippets
 
 ## Features:
-- [X] provide a major mode for CafeMol input files
+- [X] provide a major mode for Genesis input files
 - [X] key words highlighting
 - [X] comment (`*`) recognition;  use `Alt`+`;` to comment out selected region
 - [ ] indentation
