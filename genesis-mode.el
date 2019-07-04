@@ -103,7 +103,7 @@
         (,genesis-functions-regexp . font-lock-function-name-face)
         ))
 
-(defun sample-indent-line ()
+(defun genesis-indent-line ()
    "Indent current line of Sample code."
    (interactive)
    (let ((savep (> (current-column) (current-indentation)))
