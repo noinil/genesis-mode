@@ -41,6 +41,8 @@
       '("topfile" "parfile" "strfile" "psffile" "pdbfile" "crdfile" "modefile" "gprfile" "reffile" "logfile"
         "prmtopfile" "ambcrdfile" "ambreffile" "grotopfile" "grocrdfile" "groreffile" "dcdfile" "dcdvelfile" 
         "rstfile" "forcefield" "electrostatic" "switchdist" "cutoffdist" "pairlistdist" "dielec_const" 
+	"CG_DNA_BP_cutoffdist" "CG_DNA_BP_pairlistdist" "CG_DNA_ele_cutoffdist" "CG_DNA_ele_pairlistdist"
+	"CG_sol_temperature" "CG_sol_ionic_strength"
         "vdw_force_switch" "vdw_shift" "cmap_pspline" "pme_alpha" "pme_alpha_tol" "pme_nspline" "pme_multiple" "pme_mul_ratio" 
         "table_density" "water_model" "output_style" "dispersion_corr" "integrator" "nsteps" 
         "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" "method"
