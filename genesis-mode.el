@@ -48,15 +48,15 @@
         "vdw_force_switch" "vdw_shift" "cmap_pspline" "pme_alpha" "pme_alpha_tol" "pme_nspline" "pme_multiple" "pme_mul_ratio" 
         "table_density" "water_model" "output_style" "dispersion_corr" "integrator" "nsteps" 
         "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" "method"
-        "stoptr_period" "nbupdate_period" "iseed" "initial_time" "annealing" "anneal_period" 
-        "dtemperature" "verbose" "target_md" "steered_md" "initial_value" "final_value" 
-        "rigid_bond" "fast_water" "shake_iteration" "shake_tolerance" "water_model" "hydrogen_mass_upper_bound" 
-        "ensemble" "tpcontrol" "temperature" "pressure" "gamma" "tau_t" 
-        "tau_p" "compressibility" "gamma_t" "gamma_p" "isotropy" "type" 
+        "stoptr_period" "nbupdate_period" "iseed" "initial_time" "annealing" "anneal_period"
+        "dtemperature" "verbose" "target_md" "steered_md" "initial_value" "final_value"
+        "rigid_bond" "fast_water" "shake_iteration" "shake_tolerance" "water_model" "hydrogen_mass_upper_bound"
+        "ensemble" "tpcontrol" "temperature" "pressure" "gamma" "tau_t"
+        "tau_p" "compressibility" "gamma_t" "gamma_p" "isotropy" "type"
         "box_size_x" "box_size_y" "box_size_z" "nfunctions"
-	"dimension" "exchange_period"
+        "dimension" "exchange_period"
         "group1" "group2" "group3" "group4" "group5" "group6" "group7" "group8" "group9"
-        "function1" "function2" "function3" 
+        "function1" "function2" "function3"
         "direction1" "direction2" "direction3"
         "constant1" "constant2" "constant3"
         "type1" "type2" "type3"
@@ -65,7 +65,7 @@
         "cyclic_params1" "cyclic_params2" "cyclic_params3"
         "select_intex1" "select_intex2" "select_intex3" ))
 (setq genesis-types
-      '("[INPUT]" "[OUTPUT]" "[ENERGY]" "[DYNAMICS]" "[CONSTRQAINTS]" "[ENSEMBLE]" "[BOUNDARY]" "[SELECTION]" 
+      '("[INPUT]" "[OUTPUT]" "[ENERGY]" "[DYNAMICS]" "[CONSTRQAINTS]" "[ENSEMBLE]" "[BOUNDARY]" "[SELECTION]"
         "[REMD]" "[CONSTRAINTS]" "[RESTRAINTS]"))
 (setq genesis-constants
       '("ALL" "X" "Y" "Z"
@@ -77,8 +77,8 @@
         "TIP3" "AICG2P" "CUTOFF"
         "LEAP" "VVER"
         "NOBC" "PBC"
-	"SD"
-	"TEMPERATURE" "PRESSURE" "GAMMA" "REST"
+        "SD"
+        "TEMPERATURE" "PRESSURE" "GAMMA" "REST"
         "NVE" "NVT" "NPT" "NPAT" "NPgT"
         "ISO" "SEMI-ISO" "ANISO" "XY-FIXED"
         "POSI" "DIST"))
@@ -106,14 +106,14 @@
         ))
 
 (defun genesis-indent-line ()
-   "Indent current line of Sample code."
-   (interactive)
-   (let ((savep (> (current-column) (current-indentation)))
-         (indent (condition-case nil (max (sample-calculate-indentation) 0)
-                   (error 0))))
-     (if savep
-         (save-excursion (indent-line-to indent))
-       (indent-line-to indent))))
+  "Indent current line of Sample code."
+  (interactive)
+  (let ((savep (> (current-column) (current-indentation)))
+        (indent (condition-case nil (max (sample-calculate-indentation) 0)
+                  (error 0))))
+    (if savep
+        (save-excursion (indent-line-to indent))
+      (indent-line-to indent))))
 
 (defun sample-calculate-indentation ()
   "Return the column to which the current line should be indented."
