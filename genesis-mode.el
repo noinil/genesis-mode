@@ -41,8 +41,10 @@
       '("topfile" "parfile" "strfile" "psffile" "pdbfile" "crdfile" "modefile" "gprfile" "reffile" "logfile"
         "prmtopfile" "ambcrdfile" "ambreffile" "grotopfile" "grocrdfile" "groreffile" "dcdfile" "dcdvelfile" 
         "rstfile" "forcefield" "electrostatic" "switchdist" "cutoffdist" "pairlistdist" "dielec_const" 
-	"CG_DNA_BP_cutoffdist" "CG_DNA_BP_pairlistdist" "CG_DNA_ele_cutoffdist" "CG_DNA_ele_pairlistdist"
-	"CG_sol_temperature" "CG_sol_ionic_strength"
+	"cg_cutoffdist_ele" "cg_cutoffdist_126" "cg_cutoffdist_DNAbp"
+	"cg_pairlistdistdist_ele" "cg_pairlistdistdist_126" "cg_pairlistdistdist_DNAbp"
+	"cg_pairlistdistdist_exv" "cg_pairlistdistdist_PWMcos"
+	"cg_sol_temperature" "cg_sol_ionic_strength" "cg_pro_DNA_ele_scale_Q"
         "vdw_force_switch" "vdw_shift" "cmap_pspline" "pme_alpha" "pme_alpha_tol" "pme_nspline" "pme_multiple" "pme_mul_ratio" 
         "table_density" "water_model" "output_style" "dispersion_corr" "integrator" "nsteps" 
         "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" "method"
@@ -72,7 +74,7 @@
       '("pdb" "top" "psf" "par" "str" "crd" "gpr" "gro" "dcd" "rst" "mode" "log"))
 (setq genesis-functions
       '("CHARMM" "AAGO" "CAGO" "KBGO" "AMBER" "GROAMBER" "GROMARTINI" "PME"
-        "TIP3"
+        "TIP3" "AICG2P" "CUTOFF"
         "LEAP" "VVER"
         "NOBC" "PBC"
 	"SD"
