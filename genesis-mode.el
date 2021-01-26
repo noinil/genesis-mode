@@ -75,7 +75,7 @@
 (setq genesis-functions
       '("CHARMM" "AAGO" "CAGO" "KBGO" "AMBER" "GROAMBER" "GROMARTINI" "PME"
         "TIP3" "AICG2P" "CUTOFF"
-        "LEAP" "VVER"
+        "LEAP" "VVER" "VVER_CG"
         "NOBC" "PBC"
         "SD"
         "TEMPERATURE" "PRESSURE" "GAMMA" "REST"
