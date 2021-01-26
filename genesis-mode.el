@@ -44,7 +44,7 @@
 	"cg_cutoffdist_ele" "cg_cutoffdist_126" "cg_cutoffdist_DNAbp"
 	"cg_pairlistdist_ele" "cg_pairlistdist_126" "cg_pairlistdist_DNAbp"
 	"cg_pairlistdist_exv" "cg_pairlistdist_PWMcos"
-	"cg_sol_temperature" "cg_sol_ionic_strength" "cg_pro_DNA_ele_scale_Q"
+	"cg_sol_temperature" "cg_sol_ionic_strength" "cg_pro_DNA_ele_scale_Q" "cg_IDR_HPS_epsilon"
         "vdw_force_switch" "vdw_shift" "cmap_pspline" "pme_alpha" "pme_alpha_tol" "pme_nspline" "pme_multiple" "pme_mul_ratio" 
         "table_density" "water_model" "output_style" "dispersion_corr" "integrator" "nsteps" 
         "timestep" "eneout_period" "qmsave_period" "crdout_period" "velout_period" "rstout_period" "method"
